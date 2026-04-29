@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Albion Potion Calc</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="header-deco"></div>
+  <div class="flask-icon">⚗</div>
+  <h1>ALBION POTION CALC</h1>
+  <p>Calculadora de Profit por Alquimia</p>
+</header>
+
+<div class="wrap">
+
+  <!-- INVENTARIO DE INGREDIENTES -->
+  <div class="card">
+    <div class="section">🌿 Mis Ingredientes</div>
+    <p class="card-desc">Ingresa cuántos ingredientes tienes disponibles. Deja en 0 los que no tienes.</p>
+
+    <div class="ingredients-grid">
+      <!-- Hierbas -->
+      <div class="ing-group-label">Hierbas</div>
+
+      <div class="ing-row">
+        <div class="ing-info">
+          <span class="ing-emoji">🍄</span>
+          <div>
+            <span class="ing-name">Arcane Agaric</span>
+            <span class="ing-tier">T2</span>
+          </div>
+        </div>
+        <input type="number" class="ing-input" id="T2_AGARIC" value="0" min="0">
+      </div>
+
+      <div class="ing-row">
+        <div class="ing-info">
+          <span class="ing-emoji">🌱</span>
+          <div>
+            <span class="ing-name">Brightleaf Comfrey</span>
+            <span class="ing-tier">T3</span>
+          </div>
+        </div>
+        <input type="number" class="ing-input" id="T3_COMFREY" value="0" min="0">
+      </div>
+
+      <div class="ing-row">
+        <div class="ing-info">
+          <span class="ing-emoji">🌿</span>
+          <div>
+            <span class="ing-name">Crenellated Burdock</span>
+            <span class="ing-tier">T4</span>
+          </div>
+        </div>
+        <input type="number" class="ing-input" id="T4_BURDOCK" value="0" min="0">
+      </div>
+
+      <div class="ing-row">
+        <div class="ing-info">
+          <span class="ing-emoji">🌾</span>
+          <div>
+            <span class="ing-name">Dragon Teasel</span>
+            <span class="ing-tier">T5</span>
+          </div>
+        </div>
+        <input type="number" class="ing-input" id="T5_TEASEL" value="0" min="0">
+      </div>
+
+      <div class="ing-row">
+        <div class="ing-info">
+          <span class="ing-emoji">🌸</span>
+          <div>
+            <span class="ing-name">Elusive Foxglove</span>
+            <span class="ing-tier">T6</span>
+          </div>
+        </div>
+        <input type="number" class="ing-input" id="T6_FOXGLOVE" value="0" min="0">
+      </div>
+
+      <div class="ing-row">
+        <div class="ing-info">
+          <span class="ing-emoji">🔥</span>
+          <div>
+            <span class="ing-name">Firetouched Mullein</span>
+            <span class="ing-tier">T7</span>
+          </div>
+        </div>
+        <input type="number" class="ing-input" id="T7_MULLEIN" value="0" min="0">
+      </div>
+
+      <div class="ing-row">
+        <div class="ing-info">
+          <span class="ing-emoji">💀</span>
+          <div>
+            <span class="ing-name">Ghoul Yarrow</span>
+            <span class="ing-tier">T8</span>
+          </div>
+        </div>
+        <input type="number" class="ing-input" id="T8_YARROW" value="0" min="0">
+      </div>
+
+      <!-- Huevos y Leches -->
+      <div class="ing-group-label" style="margin-top:12px">Huevos & Lácteos</div>
+
+      <div class="ing-row">
+        <div class="ing-info">
+          <span class="ing-emoji">🥚</span>
+          <div>
+            <span class="ing-name">Hen Eggs</span>
+            <span class="ing-tier">T3</span>
+          </div>
+        </div>
+        <input type="number" class="ing-input" id="T3_EGG" value="0" min="0">
+      </div>
+
+      <div class="ing-row">
+        <div class="ing-info">
+          <span class="ing-emoji">🍼</span>
+          <div>
+            <span class="ing-name">Goat's Milk</span>
+            <span class="ing-tier">T4</span>
+          </div>
+        </div>
+        <input type="number" class="ing-input" id="T4_MILK" value="0" min="0">
+      </div>
+
+      <div class="ing-row">
+        <div class="ing-info">
+          <span class="ing-emoji">🥚</span>
+          <div>
+            <span class="ing-name">Goose Eggs</span>
+            <span class="ing-tier">T5</span>
+          </div>
+        </div>
+        <input type="number" class="ing-input" id="T5_EGG" value="0" min="0">
+      </div>
+
+      <div class="ing-row">
+        <div class="ing-info">
+          <span class="ing-emoji">🥛</span>
+          <div>
+            <span class="ing-name">Sheep's Milk</span>
+            <span class="ing-tier">T6</span>
+          </div>
+        </div>
+        <input type="number" class="ing-input" id="T6_MILK" value="0" min="0">
+      </div>
+
+      <div class="ing-row">
+        <div class="ing-info">
+          <span class="ing-emoji">🐄</span>
+          <div>
+            <span class="ing-name">Cow's Milk</span>
+            <span class="ing-tier">T8</span>
+          </div>
+        </div>
+        <input type="number" class="ing-input" id="T8_MILK" value="0" min="0">
+      </div>
+
+      <!-- Licores -->
+      <div class="ing-group-label" style="margin-top:12px">Licores & Otros</div>
+
+      <div class="ing-row">
+        <div class="ing-info">
+          <span class="ing-emoji">🥃</span>
+          <div>
+            <span class="ing-name">Potato Schnapps</span>
+            <span class="ing-tier">T5</span>
+          </div>
+        </div>
+        <input type="number" class="ing-input" id="POTATO_SCHNAPPS" value="0" min="0">
+      </div>
+
+      <div class="ing-row">
+        <div class="ing-info">
+          <span class="ing-emoji">🍺</span>
+          <div>
+            <span class="ing-name">Corn Hooch</span>
+            <span class="ing-tier">T6</span>
+          </div>
+        </div>
+        <input type="number" class="ing-input" id="CORN_HOOCH" value="0" min="0">
+      </div>
+
+      <div class="ing-row">
+        <div class="ing-info">
+          <span class="ing-emoji">🎃</span>
+          <div>
+            <span class="ing-name">Pumpkin Moonshine</span>
+            <span class="ing-tier">T8</span>
+          </div>
+        </div>
+        <input type="number" class="ing-input" id="PUMPKIN_MOONSHINE" value="0" min="0">
+      </div>
+    </div>
+  </div>
+
+  <!-- CONFIG -->
+  <div class="card">
+    <div class="section">⚙ Configuración</div>
+
+    <div class="section-lbl">Servidor</div>
+    <div class="tog-group" id="gServer">
+      <button class="tog full on" data-v="west">🌎 Américas</button>
+      <button class="tog full"    data-v="europe">🌍 Europa</button>
+      <button class="tog full"    data-v="east">🌏 Asia</button>
+    </div>
+
+    <div class="section-lbl">Impuesto de Mercado</div>
+    <div class="tog-group" id="gTax">
+      <button class="tog full on" data-v="8">8% — Sin Premium</button>
+      <button class="tog full"    data-v="4">4% — ⭐ Premium</button>
+    </div>
+
+    <div class="section-lbl">Brecilien</div>
+    <div class="tog-group" id="gBrecilien">
+      <button class="tog full" data-v="0">❌ Excluir</button>
+      <button class="tog full on" data-v="1">✅ Incluir</button>
+    </div>
+  </div>
+
+  <button class="calc-btn" id="calcBtn">⚗ CALCULAR POCIONES</button>
+
+  <div class="loading" id="loading">
+    <div class="spinner"></div><br>
+    Consultando precios del mercado…
+  </div>
+  <div class="error-box" id="error"></div>
+
+  <!-- RESULTADOS -->
+  <div id="results" style="display:none">
+
+    <div class="card result-summary-card">
+      <div class="section">📊 Resumen de Oportunidades</div>
+      <div id="summaryMsg" class="summary-msg"></div>
+    </div>
+
+    <div id="potionCards"></div>
+
+  </div>
+
+  <!-- SCANNER -->
+  <div class="card scanner-card">
+    <div class="section">🔍 Top Pociones del Mercado</div>
+    <p class="scan-desc">Escanea todas las pociones del mercado (ignorando tu inventario) para ver cuáles son más rentables ahora mismo.</p>
+    <button class="scan-btn" id="scanBtn" data-scanning="false">🔍 Escanear Mercado</button>
+    <div class="scan-progress" id="scanProgress">
+      <div class="scan-bar-bg"><div class="scan-bar-fill" id="scanBar"></div></div>
+      <div class="scan-info" id="scanInfo"></div>
+    </div>
+    <div class="scan-list" id="scanList">
+      <div class="scan-empty">Presiona "Escanear Mercado"<br>para ver las mejores oportunidades.</div>
+    </div>
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
