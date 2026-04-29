@@ -175,6 +175,153 @@ const POTIONS = [
     ingredients: { T8_YARROW: 72, T7_MULLEIN: 24, T5_TEASEL: 24, T8_MILK: 18, PUMPKIN_MOONSHINE: 18 },
     output: 5,
   },
+
+  // ── INVISIBILITY (T8) — muy popular en PvP/ganking ──
+  {
+    id: 'T8_POTION_INVISIBLE',
+    name: 'Invisibility Potion',
+    tier: 8,
+    emoji: '👁️',
+    category: 'Invisibilidad',
+    ingredients: { T8_YARROW: 72, T7_MULLEIN: 36, T5_TEASEL: 36, T8_MILK: 18, PUMPKIN_MOONSHINE: 18 },
+    output: 5,
+  },
+
+  // ── CLEANSING — esencial en PvP para romper CC ──
+  {
+    id: 'T5_POTION_INVISIBILITY',   // Cleansing Potion T5
+    name: 'Cleansing Potion',
+    tier: 5,
+    emoji: '✨',
+    category: 'Cleansing',
+    ingredients: { T5_TEASEL: 24, T5_EGG: 6, T6_FOXGLOVE: 12 },
+    output: 5,
+  },
+  {
+    id: 'T7_POTION_INVISIBILITY',   // Major Cleansing Potion T7
+    name: 'Major Cleansing Potion',
+    tier: 7,
+    emoji: '✨',
+    category: 'Cleansing',
+    ingredients: { T7_MULLEIN: 72, T5_EGG: 18, T6_FOXGLOVE: 36, CORN_HOOCH: 18 },
+    output: 5,
+  },
+
+  // ── BERSERK — muy usado en ganking y zerg PvP ──
+  {
+    id: 'T4_POTION_BERSERK',
+    name: 'Minor Berserk Potion',
+    tier: 4,
+    emoji: '⚔️',
+    category: 'Berserk',
+    ingredients: { T4_BURDOCK: 12, T3_COMFREY: 12, T3_EGG: 6 },
+    output: 5,
+  },
+  {
+    id: 'T6_POTION_BERSERK',
+    name: 'Berserk Potion',
+    tier: 6,
+    emoji: '⚔️',
+    category: 'Berserk',
+    ingredients: { T6_FOXGLOVE: 48, T5_EGG: 12, POTATO_SCHNAPPS: 12 },
+    output: 5,
+  },
+  {
+    id: 'T8_POTION_BERSERK',
+    name: 'Major Berserk Potion',
+    tier: 8,
+    emoji: '⚔️',
+    category: 'Berserk',
+    ingredients: { T8_YARROW: 72, T5_EGG: 18, T7_MULLEIN: 36, CORN_HOOCH: 18 },
+    output: 5,
+  },
+
+  // ── GATHERING — muy demandado por gatherers ──
+  {
+    id: 'T4_POTION_GATHERING',
+    name: 'Minor Gathering Potion',
+    tier: 4,
+    emoji: '⛏️',
+    category: 'Gathering',
+    ingredients: { T4_BURDOCK: 12, T4_MILK: 6 },
+    output: 5,
+  },
+  {
+    id: 'T6_POTION_GATHERING',
+    name: 'Gathering Potion',
+    tier: 6,
+    emoji: '⛏️',
+    category: 'Gathering',
+    ingredients: { T6_FOXGLOVE: 48, T6_MILK: 12, POTATO_SCHNAPPS: 12 },
+    output: 5,
+  },
+  {
+    id: 'T8_POTION_GATHERING',
+    name: 'Major Gathering Potion',
+    tier: 8,
+    emoji: '⛏️',
+    category: 'Gathering',
+    ingredients: { T8_YARROW: 72, T6_MILK: 18, T7_MULLEIN: 36, CORN_HOOCH: 18 },
+    output: 5,
+  },
+
+  // ── CALMING — útil en PvE para resetear aggro ──
+  {
+    id: 'T4_POTION_MOB_RESET',
+    name: 'Minor Calming Potion',
+    tier: 4,
+    emoji: '🌀',
+    category: 'Calming',
+    ingredients: { T4_BURDOCK: 12, T3_COMFREY: 12 },
+    output: 5,
+  },
+  {
+    id: 'T6_POTION_MOB_RESET',
+    name: 'Calming Potion',
+    tier: 6,
+    emoji: '🌀',
+    category: 'Calming',
+    ingredients: { T6_FOXGLOVE: 48, T5_TEASEL: 24, T5_EGG: 12 },
+    output: 5,
+  },
+  {
+    id: 'T8_POTION_MOB_RESET',
+    name: 'Major Calming Potion',
+    tier: 8,
+    emoji: '🌀',
+    category: 'Calming',
+    ingredients: { T8_YARROW: 72, T5_TEASEL: 36, T7_MULLEIN: 36 },
+    output: 5,
+  },
+
+  // ── ACID — muy usado en ZvZ para bajar resistencias ──
+  {
+    id: 'T4_POTION_ACID',
+    name: 'Minor Acid Potion',
+    tier: 4,
+    emoji: '💧',
+    category: 'Acid',
+    ingredients: { T4_BURDOCK: 12, T5_TEASEL: 12, T4_MILK: 6 },
+    output: 5,
+  },
+  {
+    id: 'T6_POTION_ACID',
+    name: 'Acid Potion',
+    tier: 6,
+    emoji: '💧',
+    category: 'Acid',
+    ingredients: { T6_FOXGLOVE: 48, T5_TEASEL: 24, T6_MILK: 12 },
+    output: 5,
+  },
+  {
+    id: 'T8_POTION_ACID',
+    name: 'Major Acid Potion',
+    tier: 8,
+    emoji: '💧',
+    category: 'Acid',
+    ingredients: { T8_YARROW: 72, T6_FOXGLOVE: 36, T7_MULLEIN: 36, T8_MILK: 18 },
+    output: 5,
+  },
 ];
 
 // Enchanted versions share the same base ID + @1
@@ -207,6 +354,24 @@ const ING_LABELS = {
   POTATO_SCHNAPPS:  'Potato Schnapps',
   CORN_HOOCH:       'Corn Hooch',
   PUMPKIN_MOONSHINE:'Pumpkin Moonshine',
+};
+
+const ING_EMOJI = {
+  T2_AGARIC:        '🍄',
+  T3_COMFREY:       '🌱',
+  T4_BURDOCK:       '🌿',
+  T5_TEASEL:        '🌾',
+  T6_FOXGLOVE:      '🌸',
+  T7_MULLEIN:       '🔥',
+  T8_YARROW:        '💀',
+  T3_EGG:           '🥚',
+  T4_MILK:          '🍼',
+  T5_EGG:           '🥚',
+  T6_MILK:          '🥛',
+  T8_MILK:          '🐄',
+  POTATO_SCHNAPPS:  '🥃',
+  CORN_HOOCH:       '🍺',
+  PUMPKIN_MOONSHINE:'🎃',
 };
 
 // ── TOGGLE GROUPS ─────────────────────────────────────────────────────────────
@@ -417,8 +582,8 @@ function renderResults(results) {
         <div class="potion-title-row">
           <span class="potion-emoji">${r.potion.emoji}</span>
           <div>
-            <div class="potion-name">${r.potion.name}</div>
-            <div class="potion-meta">T${r.potion.tier} · ${r.potion.category}</div>
+            <div class="potion-name">${r.potion.name} <span class="cat-badge cat-${r.potion.category}">${r.potion.category}</span></div>
+            <div class="potion-meta">T${r.potion.tier}</div>
           </div>
         </div>
         <div class="potion-profit-badge ${r.net > 0 ? 'pos' : 'neg'}">
