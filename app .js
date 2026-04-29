@@ -20,7 +20,7 @@ const POTIONS = [
   // ── MINOR (T2) ──
   {
     id: 'T2_POTION_HEAL',
-    name: 'Minor Healing Potion',
+    name: 'Poción de Curación Menor',
     tier: 2,
     emoji: '💊',
     category: 'Curación',
@@ -29,7 +29,7 @@ const POTIONS = [
   },
   {
     id: 'T2_POTION_ENERGY',
-    name: 'Minor Energy Potion',
+    name: 'Poción de Energía Menor',
     tier: 2,
     emoji: '⚡',
     category: 'Energía',
@@ -38,7 +38,7 @@ const POTIONS = [
   },
   {
     id: 'T3_POTION_REVIVE',
-    name: 'Minor Gigantify Potion',
+    name: 'Poción Gigantify Menor',
     tier: 3,
     emoji: '💪',
     category: 'Gigantify',
@@ -47,7 +47,7 @@ const POTIONS = [
   },
   {
     id: 'T3_POTION_STONESKIN',
-    name: 'Minor Resistance Potion',
+    name: 'Poción de Resistencia Menor',
     tier: 3,
     emoji: '🛡️',
     category: 'Resistencia',
@@ -56,10 +56,10 @@ const POTIONS = [
   },
   {
     id: 'T3_POTION_SLOWFIELD',
-    name: 'Minor Sticky Potion',
+    name: 'Poción Pegajosa Menor',
     tier: 3,
     emoji: '🕸️',
-    category: 'Sticky',
+    category: 'Pegajosa',
     ingredients: { T3_COMFREY: 8 },
     output: 5,
   },
@@ -67,7 +67,7 @@ const POTIONS = [
   // ── NORMAL (T4) ──
   {
     id: 'T4_POTION_HEAL',
-    name: 'Healing Potion',
+    name: 'Poción de Curación',
     tier: 4,
     emoji: '💊',
     category: 'Curación',
@@ -76,7 +76,7 @@ const POTIONS = [
   },
   {
     id: 'T4_POTION_ENERGY',
-    name: 'Energy Potion',
+    name: 'Poción de Energía',
     tier: 4,
     emoji: '⚡',
     category: 'Energía',
@@ -85,7 +85,7 @@ const POTIONS = [
   },
   {
     id: 'T5_POTION_REVIVE',
-    name: 'Gigantify Potion',
+    name: 'Poción Gigantify',
     tier: 5,
     emoji: '💪',
     category: 'Gigantify',
@@ -94,7 +94,7 @@ const POTIONS = [
   },
   {
     id: 'T5_POTION_STONESKIN',
-    name: 'Resistance Potion',
+    name: 'Poción de Resistencia',
     tier: 5,
     emoji: '🛡️',
     category: 'Resistencia',
@@ -103,16 +103,16 @@ const POTIONS = [
   },
   {
     id: 'T5_POTION_SLOWFIELD',
-    name: 'Sticky Potion',
+    name: 'Poción Pegajosa',
     tier: 5,
     emoji: '🕸️',
-    category: 'Sticky',
+    category: 'Pegajosa',
     ingredients: { T4_BURDOCK: 12, T5_TEASEL: 24, T5_EGG: 6 },
     output: 5,
   },
   {
     id: 'T4_POTION_COOLDOWN',
-    name: 'Poison Potion',
+    name: 'Poción de Veneno',
     tier: 4,
     emoji: '🧪',
     category: 'Veneno',
@@ -123,7 +123,7 @@ const POTIONS = [
   // ── MAJOR (T6) ──
   {
     id: 'T6_POTION_HEAL',
-    name: 'Major Healing Potion',
+    name: 'Poción de Curación Mayor',
     tier: 6,
     emoji: '💊',
     category: 'Curación',
@@ -132,7 +132,7 @@ const POTIONS = [
   },
   {
     id: 'T6_POTION_ENERGY',
-    name: 'Major Energy Potion',
+    name: 'Poción de Energía Mayor',
     tier: 6,
     emoji: '⚡',
     category: 'Energía',
@@ -141,7 +141,7 @@ const POTIONS = [
   },
   {
     id: 'T7_POTION_REVIVE',
-    name: 'Major Gigantify Potion',
+    name: 'Poción Gigantify Mayor',
     tier: 7,
     emoji: '💪',
     category: 'Gigantify',
@@ -150,7 +150,7 @@ const POTIONS = [
   },
   {
     id: 'T7_POTION_STONESKIN',
-    name: 'Major Resistance Potion',
+    name: 'Poción de Resistencia Mayor',
     tier: 7,
     emoji: '🛡️',
     category: 'Resistencia',
@@ -159,16 +159,16 @@ const POTIONS = [
   },
   {
     id: 'T7_POTION_SLOWFIELD',
-    name: 'Major Sticky Potion',
+    name: 'Poción Pegajosa Mayor',
     tier: 7,
     emoji: '🕸️',
-    category: 'Sticky',
+    category: 'Pegajosa',
     ingredients: { T4_BURDOCK: 36, T5_EGG: 18, T6_FOXGLOVE: 36, T7_MULLEIN: 72 },
     output: 5,
   },
   {
     id: 'T6_POTION_COOLDOWN',
-    name: 'Major Poison Potion',
+    name: 'Poción de Veneno Mayor',
     tier: 6,
     emoji: '🧪',
     category: 'Veneno',
@@ -176,10 +176,10 @@ const POTIONS = [
     output: 5,
   },
 
-  // ── INVISIBILITY (T8) — muy popular en PvP/ganking ──
+  // ── INVISIBILIDAD (T8) ──
   {
     id: 'T8_POTION_INVISIBLE',
-    name: 'Invisibility Potion',
+    name: 'Poción de Invisibilidad',
     tier: 8,
     emoji: '👁️',
     category: 'Invisibilidad',
@@ -187,138 +187,138 @@ const POTIONS = [
     output: 5,
   },
 
-  // ── CLEANSING — esencial en PvP para romper CC ──
+  // ── PURIFICACIÓN ──
   {
-    id: 'T5_POTION_INVISIBILITY',   // Cleansing Potion T5
-    name: 'Cleansing Potion',
+    id: 'T5_POTION_INVISIBILITY',
+    name: 'Poción de Purificación',
     tier: 5,
     emoji: '✨',
-    category: 'Cleansing',
+    category: 'Purificación',
     ingredients: { T5_TEASEL: 24, T5_EGG: 6, T6_FOXGLOVE: 12 },
     output: 5,
   },
   {
-    id: 'T7_POTION_INVISIBILITY',   // Major Cleansing Potion T7
-    name: 'Major Cleansing Potion',
+    id: 'T7_POTION_INVISIBILITY',
+    name: 'Poción de Purificación Mayor',
     tier: 7,
     emoji: '✨',
-    category: 'Cleansing',
+    category: 'Purificación',
     ingredients: { T7_MULLEIN: 72, T5_EGG: 18, T6_FOXGLOVE: 36, CORN_HOOCH: 18 },
     output: 5,
   },
 
-  // ── BERSERK — muy usado en ganking y zerg PvP ──
+  // ── BERSERKER ──
   {
     id: 'T4_POTION_BERSERK',
-    name: 'Minor Berserk Potion',
+    name: 'Poción Berserker Menor',
     tier: 4,
     emoji: '⚔️',
-    category: 'Berserk',
+    category: 'Berserker',
     ingredients: { T4_BURDOCK: 12, T3_COMFREY: 12, T3_EGG: 6 },
     output: 5,
   },
   {
     id: 'T6_POTION_BERSERK',
-    name: 'Berserk Potion',
+    name: 'Poción Berserker',
     tier: 6,
     emoji: '⚔️',
-    category: 'Berserk',
+    category: 'Berserker',
     ingredients: { T6_FOXGLOVE: 48, T5_EGG: 12, POTATO_SCHNAPPS: 12 },
     output: 5,
   },
   {
     id: 'T8_POTION_BERSERK',
-    name: 'Major Berserk Potion',
+    name: 'Poción Berserker Mayor',
     tier: 8,
     emoji: '⚔️',
-    category: 'Berserk',
+    category: 'Berserker',
     ingredients: { T8_YARROW: 72, T5_EGG: 18, T7_MULLEIN: 36, CORN_HOOCH: 18 },
     output: 5,
   },
 
-  // ── GATHERING — muy demandado por gatherers ──
+  // ── RECOLECCIÓN ──
   {
     id: 'T4_POTION_GATHERING',
-    name: 'Minor Gathering Potion',
+    name: 'Poción de Recolección Menor',
     tier: 4,
     emoji: '⛏️',
-    category: 'Gathering',
+    category: 'Recolección',
     ingredients: { T4_BURDOCK: 12, T4_MILK: 6 },
     output: 5,
   },
   {
     id: 'T6_POTION_GATHERING',
-    name: 'Gathering Potion',
+    name: 'Poción de Recolección',
     tier: 6,
     emoji: '⛏️',
-    category: 'Gathering',
+    category: 'Recolección',
     ingredients: { T6_FOXGLOVE: 48, T6_MILK: 12, POTATO_SCHNAPPS: 12 },
     output: 5,
   },
   {
     id: 'T8_POTION_GATHERING',
-    name: 'Major Gathering Potion',
+    name: 'Poción de Recolección Mayor',
     tier: 8,
     emoji: '⛏️',
-    category: 'Gathering',
+    category: 'Recolección',
     ingredients: { T8_YARROW: 72, T6_MILK: 18, T7_MULLEIN: 36, CORN_HOOCH: 18 },
     output: 5,
   },
 
-  // ── CALMING — útil en PvE para resetear aggro ──
+  // ── CALMA ──
   {
     id: 'T4_POTION_MOB_RESET',
-    name: 'Minor Calming Potion',
+    name: 'Poción de Calma Menor',
     tier: 4,
     emoji: '🌀',
-    category: 'Calming',
+    category: 'Calma',
     ingredients: { T4_BURDOCK: 12, T3_COMFREY: 12 },
     output: 5,
   },
   {
     id: 'T6_POTION_MOB_RESET',
-    name: 'Calming Potion',
+    name: 'Poción de Calma',
     tier: 6,
     emoji: '🌀',
-    category: 'Calming',
+    category: 'Calma',
     ingredients: { T6_FOXGLOVE: 48, T5_TEASEL: 24, T5_EGG: 12 },
     output: 5,
   },
   {
     id: 'T8_POTION_MOB_RESET',
-    name: 'Major Calming Potion',
+    name: 'Poción de Calma Mayor',
     tier: 8,
     emoji: '🌀',
-    category: 'Calming',
+    category: 'Calma',
     ingredients: { T8_YARROW: 72, T5_TEASEL: 36, T7_MULLEIN: 36 },
     output: 5,
   },
 
-  // ── ACID — muy usado en ZvZ para bajar resistencias ──
+  // ── ÁCIDA ──
   {
     id: 'T4_POTION_ACID',
-    name: 'Minor Acid Potion',
+    name: 'Poción Ácida Menor',
     tier: 4,
     emoji: '💧',
-    category: 'Acid',
+    category: 'Ácida',
     ingredients: { T4_BURDOCK: 12, T5_TEASEL: 12, T4_MILK: 6 },
     output: 5,
   },
   {
     id: 'T6_POTION_ACID',
-    name: 'Acid Potion',
+    name: 'Poción Ácida',
     tier: 6,
     emoji: '💧',
-    category: 'Acid',
+    category: 'Ácida',
     ingredients: { T6_FOXGLOVE: 48, T5_TEASEL: 24, T6_MILK: 12 },
     output: 5,
   },
   {
     id: 'T8_POTION_ACID',
-    name: 'Major Acid Potion',
+    name: 'Poción Ácida Mayor',
     tier: 8,
     emoji: '💧',
-    category: 'Acid',
+    category: 'Ácida',
     ingredients: { T8_YARROW: 72, T6_FOXGLOVE: 36, T7_MULLEIN: 36, T8_MILK: 18 },
     output: 5,
   },
@@ -339,21 +339,21 @@ const ALL_POTIONS = [...POTIONS, ...ENCHANTED_POTIONS];
 // ── INGREDIENT LABELS ─────────────────────────────────────────────────────────
 
 const ING_LABELS = {
-  T2_AGARIC:        'Arcane Agaric',
-  T3_COMFREY:       'Brightleaf Comfrey',
-  T4_BURDOCK:       'Crenellated Burdock',
-  T5_TEASEL:        'Dragon Teasel',
-  T6_FOXGLOVE:      'Elusive Foxglove',
-  T7_MULLEIN:       'Firetouched Mullein',
-  T8_YARROW:        'Ghoul Yarrow',
-  T3_EGG:           'Hen Eggs',
-  T4_MILK:          "Goat's Milk",
-  T5_EGG:           'Goose Eggs',
-  T6_MILK:          "Sheep's Milk",
-  T8_MILK:          "Cow's Milk",
-  POTATO_SCHNAPPS:  'Potato Schnapps',
-  CORN_HOOCH:       'Corn Hooch',
-  PUMPKIN_MOONSHINE:'Pumpkin Moonshine',
+  T2_AGARIC:        'Agarico Arcano',
+  T3_COMFREY:       'Consuelda Luminosa',
+  T4_BURDOCK:       'Bardana Almenada',
+  T5_TEASEL:        'Cardencha Dragón',
+  T6_FOXGLOVE:      'Digital Esquiva',
+  T7_MULLEIN:       'Gordolobo Ígneo',
+  T8_YARROW:        'Milenrama Espectral',
+  T3_EGG:           'Huevos de Gallina',
+  T4_MILK:          'Leche de Cabra',
+  T5_EGG:           'Huevos de Ganso',
+  T6_MILK:          'Leche de Oveja',
+  T8_MILK:          'Leche de Vaca',
+  POTATO_SCHNAPPS:  'Aguardiente de Papa',
+  CORN_HOOCH:       'Aguardiente de Maíz',
+  PUMPKIN_MOONSHINE:'Licor de Calabaza',
 };
 
 const ING_EMOJI = {
@@ -693,6 +693,7 @@ async function runScan() {
           totalOut,
           bestSell,
           bestCity: sellRows[0].city,
+          sellAllCities: sellRows,
           net,
         });
       }
@@ -737,17 +738,97 @@ function renderScanTop(results) {
       <div class="scan-rank">${medals[i]}</div>
       <div class="scan-body">
         <div class="scan-name">${r.potion.emoji} ${r.potion.name}</div>
-        <div class="scan-meta">T${r.potion.tier} · ${r.batches} lotes · ${r.totalOut} pociones → ${r.bestCity || '—'}</div>
+        <div class="scan-meta">T${r.potion.tier} · ${r.batches} lotes · ${r.totalOut} pociones → <strong>${r.bestCity || '—'}</strong></div>
       </div>
       <div class="scan-profit ${r.net > 0 ? 'pos' : 'neg'}">
         <div class="scan-pv">${fmt(r.net)}</div>
-        <div class="scan-pl">plata</div>
-      </div>`;
+        <div class="scan-pl">plata neta</div>
+      </div>
+      <div class="scan-arrow">›</div>`;
     div.style.cursor = 'pointer';
-    div.title = 'Clic para ver detalles';
-    div.addEventListener('click', () => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
+    div.title = 'Clic para ver receta y precios';
+    div.addEventListener('click', () => openScanModal(r));
     scanList.appendChild(div);
   });
+}
+
+// ── MODAL ─────────────────────────────────────────────────────────────────────
+
+function openScanModal(r) {
+  const overlay = document.getElementById('modalOverlay');
+  const content = document.getElementById('modalContent');
+
+  const ing = Object.entries(r.potion.ingredients)
+    .map(([id, qty]) => `
+      <div class="modal-ing-row">
+        <span class="modal-ing-emoji">${ING_EMOJI[id] || '🌿'}</span>
+        <span class="modal-ing-name">${ING_LABELS[id] || id}</span>
+        <span class="modal-ing-qty">${qty} por lote</span>
+        <span class="modal-ing-total">${qty * r.batches} total</span>
+      </div>`).join('');
+
+  const cityRows = (r.sellAllCities || []).slice(0, 7).map((row, i) => `
+    <tr${i === 0 ? ' class="best"' : ''}>
+      <td>${row.city}</td>
+      <td style="color:${i === 0 ? 'var(--purple)' : 'var(--text-dim)'}">${fmt(row.price)}</td>
+      <td style="color:${i === 0 ? 'var(--green)' : 'var(--text-dim)'}">${fmt(r.totalOut * row.price * (1 - state.tax / 100))}</td>
+    </tr>`).join('');
+
+  const noCityData = !r.sellAllCities || r.sellAllCities.length === 0;
+
+  content.innerHTML = `
+    <div class="modal-header">
+      <span class="modal-emoji">${r.potion.emoji}</span>
+      <div>
+        <div class="modal-title">${r.potion.name}</div>
+        <div class="modal-subtitle">
+          T${r.potion.tier} · <span class="cat-badge cat-${r.potion.category}">${r.potion.category}</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-stats">
+      <div class="modal-stat">
+        <div class="modal-stat-lbl">Lotes analizados</div>
+        <div class="modal-stat-val cyan">${r.batches}</div>
+      </div>
+      <div class="modal-stat">
+        <div class="modal-stat-lbl">Pociones totales</div>
+        <div class="modal-stat-val">${r.totalOut}</div>
+      </div>
+      <div class="modal-stat">
+        <div class="modal-stat-lbl">Mejor precio/u</div>
+        <div class="modal-stat-val purple">${fmt(r.bestSell)}</div>
+      </div>
+      <div class="modal-stat">
+        <div class="modal-stat-lbl">Ingreso neto</div>
+        <div class="modal-stat-val ${r.net > 0 ? 'green' : 'red'}">${fmt(r.net)}</div>
+      </div>
+    </div>
+
+    <div class="modal-section-lbl">📋 Receta (por lote → 5 pociones)</div>
+    <div class="modal-ing-list">${ing}</div>
+
+    <div class="modal-section-lbl">🏙️ Precios por Ciudad</div>
+    ${noCityData
+      ? '<div class="no-data">Sin datos de mercado disponibles.</div>'
+      : `<table class="sell-table">
+          <thead><tr><th>Ciudad</th><th>Precio/u</th><th>Total neto</th></tr></thead>
+          <tbody>${cityRows}</tbody>
+        </table>`
+    }
+    <div class="modal-tip">💡 Impuesto aplicado: ${state.tax}% · Datos: sell_price_min calidad 1</div>
+  `;
+
+  overlay.classList.add('active');
+}
+
+document.getElementById('modalClose').addEventListener('click', closeModal);
+document.getElementById('modalOverlay').addEventListener('click', e => {
+  if (e.target === document.getElementById('modalOverlay')) closeModal();
+});
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+function closeModal() {
+  document.getElementById('modalOverlay').classList.remove('active');
 }
